@@ -3,7 +3,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #174ea6;
+    background-color: #024134;
+    display: flex;
+    flex-direction: column;
   }
   .header {
     background-color: rgb(251, 251, 251);
@@ -137,10 +139,49 @@ button{
     box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
   }
 
-  @media(min-width:500px) {
-    
-    .main-container{
-      flex-direction: column  ;
-      width: auto;
-    }
+  /* CSS */
+/* Adicione o seguinte código no arquivo style.css */
+
+/* Estilos gerais */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para telas grandes */
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 40%;
+}
+
+.card-project {
+  width: 30%;
+}
+
+/* Estilos para telas menores */
+
+@media only screen and (max-width: 768px) {
+
+  .main-container {
+    flex-direction: column;
+    max-width: none;
   }
+
+  .card, .card-project {
+    width: 100%;
+  }
+
+}
