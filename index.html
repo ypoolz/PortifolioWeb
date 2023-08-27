@@ -15,6 +15,29 @@
 </head>
 
 <body>
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBVRF1UT_NuzQ9iSguyOlvlB7HxHPN1SvY",
+    authDomain: "metal-air-353515.firebaseapp.com",
+    projectId: "metal-air-353515",
+    storageBucket: "metal-air-353515.appspot.com",
+    messagingSenderId: "524415559971",
+    appId: "1:524415559971:web:1d9dabc32974570f964496",
+    measurementId: "G-S4L44SMYF9"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient" style="border: 0px solid var(--bs-purple) ;">
         <div class="container"><a class="navbar-brand logo" href="#">Meu portifólio</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarNav"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarNav">
